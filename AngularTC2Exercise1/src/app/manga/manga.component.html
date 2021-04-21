@@ -1,0 +1,19 @@
+<table class="blueTable">
+    <thead>
+        <tr>
+            <th>Manga Title</th>
+            <th>Price</th>
+            <th>Genre</th>
+            <th>Main Character</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let manga of MangaList">
+			<td>{{manga.title | uppercase}}</td>
+			<td>{{manga.price}}</td>
+			<td>{{manga.genre}}</td>
+			<td>{{manga.mainCaracter}}</td>
+		</tr>
+    </tbody>
+</table>
